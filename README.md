@@ -6,27 +6,34 @@
 
 For this coding challenge I have made the following assumptions:
 
-- `On-DutyDurationMS` was chosen as 'working time' for the purposes of calculating pay, overtime, and compliance
+- `OnDutyDurationMS` was chosen as 'working time' for the purposes of calculating pay, overtime, and compliance
 - All `dutyStatusDuration` times provided in the data are assumed to be contiguous rather than a sum of distinct values throughout the day
+- After everything was done I realized I probably should have calculated compliance differently but I guess we can discuss
 
 
 ## Installation
 
 ```bash
+# API
+$ cd api
+$ npm install
+```
+
+```bash
+# UI
+$ cd ui
 $ npm install
 ```
 
 ## Running the app
 
 ```bash
-# development
+# start API
 $ npm run start
 
-# watch mode
-$ npm run start:dev
+# start UI
+$ npm run start
 
-# production mode
-$ npm run start:prod
 ```
 
 ## Test
@@ -35,22 +42,9 @@ $ npm run start:prod
 # unit tests
 $ npm run test
 
-# e2e tests
-$ npm run test:e2e
-
 # test coverage
 $ npm run test:cov
 ```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
 
 ## License
 
